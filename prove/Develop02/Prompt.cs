@@ -2,7 +2,7 @@ using System;
 
 public class Prompt
 {
-    private string[] _Prompts_list = new string[]
+    public string[] _Prompts_list = new string[]
     {
         "What is one thing you’re grateful for today?",
         "What was the most interesting thing you learned recently?",

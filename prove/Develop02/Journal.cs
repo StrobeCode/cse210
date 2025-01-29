@@ -3,9 +3,9 @@ using System.IO;
 
 public class Journal
 {
-    private Entry[] _entries = new Entry[10]; // Start with an initial capacity of 10
-    private int _entryCount = 0;
-    private Prompt _promptGenerator = new Prompt();
+    public Entry[] _entries = new Entry[10];
+    public int _entryCount = 0;
+    public Prompt _promptGenerator = new Prompt();
 
     public void WriteEntry()
     {
@@ -71,7 +71,7 @@ public class Journal
             return;
         }
 
-        _entries = new Entry[10]; // Reset array
+        _entries = new Entry[10];
         _entryCount = 0;
 
         using (StreamReader reader = new StreamReader(fileName))
@@ -87,7 +87,7 @@ public class Journal
                 string dateTime = line;
                 string prompt = reader.ReadLine();
                 string input = reader.ReadLine();
-                reader.ReadLine(); // Skip separator line
+                reader.ReadLine();
 
                 Entry entry = new Entry
                 {
@@ -104,7 +104,7 @@ public class Journal
         Console.WriteLine($"Journal loaded from {fileName}");
     }
 
-    private void ResizeArray()
+    public void ResizeArray()
     {
         Entry[] newEntries = new Entry[_entries.Length * 2];
         for (int i = 0; i < _entries.Length; i++)
