@@ -1,6 +1,6 @@
 using System;
 using System.IO;
-
+// Journal file
 public class Journal
 {
     public Entry[] _entries = new Entry[10];

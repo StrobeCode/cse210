@@ -1,5 +1,5 @@
 using System;
-
+// Prompt file
 public class Prompt
 {
     public string[] _promptsList = new string[]

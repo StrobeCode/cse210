@@ -1,7 +1,7 @@
 using System;
 // EXCEEDING REQUIREMENTS:
-// I added a mood feature to my journal program that asks the user
-// how they are feeling when they write an entry.
+// I added a mood feature to my journal program that asks you
+// how they are feeling when you write an entry.
 // I added this feature because it allows you to look back at certain entries
 // and see how your mood has changed over time.
 class Program

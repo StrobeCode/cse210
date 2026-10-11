@@ -1,4 +1,5 @@
 public class Entry
+// Entry File
 {
     public string _prompt;
     public string _input;
