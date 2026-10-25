@@ -2,9 +2,7 @@
 using System;
 
 // I exceeded the core requirements by adding a counter
-// that shows how many words are left to memorize.
-// I also made sure the program only selects words that
-// are still visible so each round hides new words.
+// that shows how many words are left to memorizex
 
 class Program
 {
